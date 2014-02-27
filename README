@@ -1,0 +1,22 @@
+-*- text -*-
+
+ApproxSVM
+
+blabla todo
+
+Please report bugs to marc.claesen@esat.kuleuven.be. 
+
+Licensing
+
+ApproxSVM is released under the General Lesser Public License 
+version 3 (GPLv3+). See the file COPYING.LESSER for the license
+agreement.
+
+----
+
+Copyright (C) 2013 KU Leuven
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without warranty of any kind.
