@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 {
 	// initialize help
 	std::string helpheader(
-			"Approximates the specified SVM model (LIBSVM/LS-SVM).\n"
+			"Approximates the specified SVM model (LIBSVM).\n"
 			"\n"
 			"Options:\n"
 	), helpfooter("");
