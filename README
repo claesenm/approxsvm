@@ -1,22 +1,52 @@
--*- text -*-
+*** ApproxSVM ***
+Approximating nonlinear SVM models with RBF kernel.
 
-ApproxSVM
+This project is a C++ implementation of a second-order Maclaurin series 
+approximation of LIBSVM models using an RBF kernel. This approximation
+greatly increases prediction speed for models with many support vectors
+but in few dimensions. For mathematical details, please refer to the 
+associated publication at:
+  TODO
+  
+If you use this software, please acknowledge it in publications.
 
-blabla todo
+*******************************************************************
 
-Please report bugs to marc.claesen@esat.kuleuven.be. 
+COMPILATION
 
-Licensing
+Depending on what facilities are available on your platform, several
+options exist for computations. The configure script detects presence
+of BLAS routines on your platform and uses them if possible. If not
+available, a naive (slow) fallback implementation is used instead. If
+you have ATLAS on your system, make sure to use it in the configure
+stage using "--with-atlas=<PATH>".
 
-ApproxSVM is released under the General Lesser Public License 
-version 3 (GPLv3+). See the file COPYING.LESSER for the license
-agreement.
+It is strongly advised to allow the use of vector instructions using
+the following compiler flag: "-march=native".
 
-----
+For a typical build, issue the following commands:
+  ./configure CXXFLAGS="-O3 -march=native" --disable-shared
+  make
+  sudo make install
 
-Copyright (C) 2013 KU Leuven
+If you get errors about loading shared libraries, issue this command:
+  sudo ldconfig
 
-Copying and distribution of this file, with or without modification,
-are permitted in any medium without royalty provided the copyright
-notice and this notice are preserved.  This file is offered as-is,
-without warranty of any kind.
+*******************************************************************
+
+USING THE TOOLS
+
+ApproxSVM contains two tools:
+  approx-svm: used to approximate a given LIBSVM model with RBF kernel
+  approx-predict: used to make predictions with an approximated model
+  
+For an overview of command line arguments, please execute either tool
+without arguments or with "--help".
+
+*******************************************************************
+
+CONTACT
+
+Please report bugs or suggestions to marc.claesen@esat.kuleuven.be. 
+The latest version of this software is freely available at:
+  https://github.com/claesenm/approxsvm
