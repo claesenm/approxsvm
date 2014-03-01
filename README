@@ -36,7 +36,7 @@ If you get errors about loading shared libraries, issue this command:
 
 USING THE TOOLS
 
-ApproxSVM contains two tools:
+This software package contains the following tools:
   approx-svm: used to approximate a given LIBSVM model with RBF kernel
   approx-predict: used to make predictions with an approximated model
   approx-analyse: analyse data set and determine maximum value for 
