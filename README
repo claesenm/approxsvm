@@ -6,7 +6,7 @@ approximation of LIBSVM models using an RBF kernel. This approximation
 greatly increases prediction speed for models with many support vectors
 but in few dimensions. For mathematical details, please refer to the 
 associated publication at:
-  TODO
+  ftp://ftp.esat.kuleuven.be/pub/SISTA/claesenm/reports/14-26.pdf
   
 If you use this software, please acknowledge it in publications.
 
