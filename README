@@ -39,6 +39,10 @@ USING THE TOOLS
 ApproxSVM contains two tools:
   approx-svm: used to approximate a given LIBSVM model with RBF kernel
   approx-predict: used to make predictions with an approximated model
+  approx-analyse: analyse data set and determine maximum value for 
+    gamma for which a model can be reliably approximated
+  approx-xval: performs k-fold cross-validation using approximated
+    models instead of exact LIBSVM models (train-approx-predict)
   
 For an overview of command line arguments, please execute either tool
 without arguments or with "--help".
