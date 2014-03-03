@@ -4,9 +4,14 @@ Approximating nonlinear SVM models with RBF kernel.
 This project is a C++ implementation of a second-order Maclaurin series 
 approximation of LIBSVM models using an RBF kernel. This approximation
 greatly increases prediction speed for models with many support vectors
-but in few dimensions. For mathematical details, please refer to the 
-associated publication at:
+but in few dimensions. 
+
+For mathematical details, please refer to the associated publication at:
   ftp://ftp.esat.kuleuven.be/pub/SISTA/claesenm/reports/14-26.pdf
+  
+Scripts and data to execute most of the experiments reported in the 
+manuscript are available at the following location (about 30 MB):
+  http://homes.esat.kuleuven.be/~claesenm/approxsvm/examples.tar.gz
   
 If you use this software, please acknowledge it in publications.
 
