@@ -18,8 +18,9 @@ Depending on what facilities are available on your platform, several
 options exist for computations. The configure script detects presence
 of BLAS routines on your platform and uses them if possible. If not
 available, a naive (slow) fallback implementation is used instead. If
-you have ATLAS on your system, make sure to use it in the configure
-stage using "--with-atlas=<PATH>".
+you have ATLAS on your system, make sure to enable it in the configure
+stage using --with-atlas and include the path to the ATLAS library
+in LDFLAGS, for example using LDFLAGS="-L/usr/local/atlas/lib".
 
 It is strongly advised to allow the use of vector instructions using
 the following compiler flag: "-march=native".
